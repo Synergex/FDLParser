@@ -1,5 +1,5 @@
 /*
- * Title: FDLParser.cs
+ * Title: FDLFileParser.cs
  *
  * Description: Parses OpenVMS File Definition Language (FDL) files into .NET object models.
  *
@@ -23,7 +23,7 @@ namespace FDLParser
     /// typed convenience models for the FILE, RECORD, and KEY sections. FDL keywords are treated as
     /// case-insensitive, and unique abbreviations for the FILE, RECORD, and KEY attributes are expanded.
     /// </remarks>
-    public sealed class FDLParser
+    public sealed class FDLFileParser
     {
         private static readonly string[] PrimarySectionNames =
         [

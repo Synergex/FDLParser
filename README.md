@@ -70,12 +70,12 @@ For the rules governing section order, statement delimiters, legal values, and w
 
 ## Parse an FDL file
 
-Use `FDLParser.ParseFile` to read an `.FDL` file, or `FDLParser.Parse` when the FDL text is already in memory.
+Use `FDLFileParser.ParseFile` to read an `.FDL` file, or `FDLFileParser.Parse` when the FDL text is already in memory.
 
 ```csharp
 using FDLParser;
 
-var parser = new FDLParser();
+var parser = new FDLFileParser();
 FDLFile document = parser.ParseFile("customer.fdl");
 
 Console.WriteLine(document.Title);                  // Customer master file
@@ -87,7 +87,7 @@ Console.WriteLine(document.Record?.Size);           // 128
 For example, this parses an FDL string directly:
 
 ```csharp
-var document = new FDLParser().Parse(@"
+var document = new FDLFileParser().Parse(@"
 FILE
     ORGANIZATION SEQUENTIAL
 RECORD
@@ -232,7 +232,7 @@ Malformed quoted text and an attribute that appears before any primary section c
 ```csharp
 try
 {
-    var document = new FDLParser().ParseFile("input.fdl");
+    var document = new FDLFileParser().ParseFile("input.fdl");
 }
 catch (FDLParseException exception)
 {
