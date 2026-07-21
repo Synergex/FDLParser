@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <BaseVersionFile>$(MSBuildThisFileDirectory)VERSION</BaseVersionFile>
+    <BaseVersion>$([System.IO.File]::ReadAllText('$(BaseVersionFile)').Trim())</BaseVersion>
+    <BuildVersionTimestampTicks>$([System.DateTime]::UtcNow.Ticks)</BuildVersionTimestampTicks>
+    <BuildVersionYear>$([System.DateTime]::new($(BuildVersionTimestampTicks)).ToString('yy'))</BuildVersionYear>
+    <BuildVersionDayOfYear>$([System.DateTime]::new($(BuildVersionTimestampTicks)).DayOfYear.ToString('D3'))</BuildVersionDayOfYear>
+    <BuildVersionTime>$([System.DateTime]::new($(BuildVersionTimestampTicks)).ToString('HHmm'))</BuildVersionTime>
+    <BuildVersion>$(BaseVersion).$(BuildVersionYear)$(BuildVersionDayOfYear).$(BuildVersionTime)</BuildVersion>
+
+    <Version>$(BuildVersion)</Version>
+    <PackageVersion>$(BuildVersion)</PackageVersion>
+    <AssemblyVersion>$(BuildVersion)</AssemblyVersion>
+    <FileVersion>$(BuildVersion)</FileVersion>
+    <InformationalVersion>$(BuildVersion)</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+</Project>

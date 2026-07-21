@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>FDLParser</PackageId>
+    <Authors>Synergex International, Inc.</Authors>
+    <Company>Synergex International, Inc.</Company>
+    <Copyright>Copyright (c) 2026 Synergex International, Inc.</Copyright>
+    <Description>A .NET library for parsing and inspecting OpenVMS File Definition Language (FDL) files.</Description>
+    <PackageTags>OpenVMS;FDL;RMS;parser</PackageTags>
+    <PackageProjectUrl>https://github.com/Synergex/FDLParser</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Synergex/FDLParser</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryCommit>$(SourceRevisionId)</RepositoryCommit>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../LICENSE" Pack="true" PackagePath="" />
+    <None Include="../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
