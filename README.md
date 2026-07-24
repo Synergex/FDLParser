@@ -6,16 +6,16 @@ FDL describes the characteristics of an OpenVMS RMS data file. An FDL document i
 
 ## Add the library
 
-Install [FDLParser from NuGet](https://www.nuget.org/packages/FDLParser) in a .NET Standard 2.0-compatible project:
+Install [FDLParser from NuGet](https://www.nuget.org/packages/Synergex.FDLParser) in a .NET Standard 2.0-compatible project:
 
 ```powershell
-dotnet add package FDLParser
+dotnet add package Synergex.FDLParser
 ```
 
 In Visual Studio's Package Manager Console, use:
 
 ```powershell
-Install-Package FDLParser
+Install-Package Synergex.FDLParser
 ```
 
 For local source development, reference the project directly instead:

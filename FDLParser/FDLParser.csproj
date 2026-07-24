@@ -6,11 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-    <PackageId>FDLParser</PackageId>
+    <PackageId>Synergex.FDLParser</PackageId>
+    <PackageTitle>Synergex MetaDataTool</PackageTitle>
     <Authors>Synergex International, Inc.</Authors>
     <Company>Synergex International, Inc.</Company>
     <Copyright>Copyright (c) 2026 Synergex International, Inc.</Copyright>
-    <Description>A .NET library for parsing and inspecting OpenVMS File Definition Language (FDL) files.</Description>
+    <Description>A .NET library for parsing OpenVMS File Definition Language (FDL) files and exposing the content as an object model.</Description>
     <PackageTags>OpenVMS;FDL;RMS;parser</PackageTags>
     <PackageProjectUrl>https://github.com/Synergex/FDLParser</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Synergex/FDLParser</RepositoryUrl>
@@ -18,7 +19,7 @@
     <RepositoryCommit>$(SourceRevisionId)</RepositoryCommit>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
@@ -28,7 +29,7 @@
   <ItemGroup>
     <None Include="../LICENSE" Pack="true" PackagePath="" />
     <None Include="../README.md" Pack="true" PackagePath="" />
-	  <None Include="../VERSION" Pack="false" PackagePath="" />
+    <None Include="../VERSION" Pack="false" PackagePath="" />
   </ItemGroup>
 
 </Project>
