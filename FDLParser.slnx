@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="FDLParser/FDLParser.csproj" />
+  <Project Path="FDLParser.Tests/FDLParser.Tests.csproj" />
 </Solution>
