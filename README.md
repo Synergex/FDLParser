@@ -1,5 +1,10 @@
 # FDLParser
 
+[![Build](https://github.com/Synergex/FDLParser/actions/workflows/build.yml/badge.svg)](https://github.com/Synergex/FDLParser/actions/workflows/build.yml)
+[![NuGet](https://img.shields.io/nuget/v/Synergex.FDLParser?logo=nuget)](https://www.nuget.org/packages/Synergex.FDLParser)
+[![.NET Standard 2.0](https://img.shields.io/badge/.NET%20Standard-2.0-512BD4?logo=dotnet&logoColor=white)](https://learn.microsoft.com/dotnet/standard/net-standard)
+[![License: BSD-2-Clause](https://img.shields.io/badge/license-BSD--2--Clause-blue)](LICENSE)
+
 FDLParser is a .NET Standard 2.0 library for reading OpenVMS File Definition Language (FDL) text into a navigable .NET object model. It is useful for inspecting generated FDL files, migrating file definitions, building reporting or validation tools, and extracting RMS file characteristics without writing an FDL lexer.
 
 FDL describes the characteristics of an OpenVMS RMS data file. An FDL document is organized into primary sections, such as `FILE`, `RECORD`, and `KEY`, followed by their secondary attributes. VSI's [OpenVMS Record Management Utilities Reference Manual](https://docs.vmssoftware.com/vsi-openvms-record-management-utilities-reference-manual/) is the authoritative reference for FDL syntax, attributes, values, and validity rules.
